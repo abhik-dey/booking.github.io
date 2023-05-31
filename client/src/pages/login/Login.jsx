@@ -22,7 +22,7 @@ const Login = () => {
     e.preventDefault()
     dispatch({type:"LOGIN_START"})
     try{
-        const res = await axios.post("https://hotel-booking-p811.onrender.com/auth/login", credentials)
+        const res = await axios.post("https://book-1441.onrender.com/auth/login", credentials)
         dispatch({type:"LOGIN_SUCCESS", payload:res.data.details});
         navigate("/")
     }catch(err){
